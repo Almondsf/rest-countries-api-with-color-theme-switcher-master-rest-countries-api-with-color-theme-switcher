@@ -14,7 +14,7 @@ function App() {
   const themeValue = JSON.parse(localStorage.getItem("theme"))
   return (
    <div className="App overflow-x-hidden">
-      <div className={themeValue ? "h-max bg-vdarkBlue dark:text-white" : "h-max bg-light"}>
+      <div className={themeValue ? "min-h-[100vh] bg-vdarkBlue dark:text-white" : "min-h-[100vh] bg-light"}>
        <Head toggleFunc={toggleFunc} themeValue={themeValue}/>
         <Home toggleState={toggleState} themeValue={themeValue}/>
       </div>
