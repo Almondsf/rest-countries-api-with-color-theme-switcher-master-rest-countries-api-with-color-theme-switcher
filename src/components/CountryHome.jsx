@@ -1,6 +1,6 @@
 export const CountryHome = ({ themeValue, country, search}) => {  
   return (
-    <div className='md:grid md:grid-cols-4 md:w-screen md:my-14 my-5'>
+    <div className='md:grid md:grid-cols-4 w-screen md:my-14 mx-auto my-5'>
       {country?.filter((cstuff) => {
         return !search ? cstuff : cstuff?.name.toLowerCase().includes(search)
       }).map((cstuff) =>(
