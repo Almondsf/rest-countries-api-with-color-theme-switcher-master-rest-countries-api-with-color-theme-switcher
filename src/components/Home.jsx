@@ -28,9 +28,9 @@ export const Home = ({ themeValue, data}) => {
 
         {loading && <Spinner themeValue={themeValue}/>}
     {
-      !loading && <div className='mx-10 mt-2 py-2'>
+      !loading && <div className='mx-6 mt-2 py-2'>
       <div className="md:flex md:justify-between drop-shadow rounded">
-        <span className={themeValue ? "flex self-center items-center py-1 mx-3 rounded pr-5 px-3 bg-darkBlue " : "flex text-darkBlue bg-white self-center items-center py-1 rounded pr-5 mx-3 px-3"}><FaSistrix/> 
+        <span className={themeValue ? "flex self-center items-center py-1 my-5 rounded pr-5 px-3 bg-darkBlue " : "flex text-darkBlue bg-white self-center items-center py-1 rounded pr-5 my-5 px-3"}><FaSistrix/> 
         <input onChange={event => setSearch(event.target.value)} className={themeValue ? 'md:pl-3 border-none outline-none bg-darkBlue' : 'bg-white md:pl-3 border-none outline-none'} type="search" placeholder="Search for a country"></input></span>
         <span className="md:mr-[100px]"><select className={themeValue ? "flex self-center items-center py-1 rounded outline-none pr-5 px-3 bg-darkBlue" : "flex outline-none text-darkBlue bg-white self-center items-center py-1 rounded pr-5 px-3"} name="countries" id="">
           <option value="volvo">All</option>
