@@ -2,32 +2,13 @@ import {useState, useEffect} from 'react'
 import { FaSistrix } from "react-icons/fa";
 import {CountryHome} from './CountryHome'
 import Spinner from "./Spinner"
-export const Home = ({ themeValue, data}) => {
-  const [country, setCountry] = useState(null)
-  const [loading, setLoading] = useState(true)
-    const apiUrl = "https://restcountries.com/v2/all";
-
-    useEffect(() =>{
-      fetch(apiUrl)
-
-        .then(response =>{
-          return response.json();
-        })
-        .then(data =>{
-          setCountry(data)
-          setLoading(false)
-        })
-    }, [data])
-    
-
+export const Home = ({ themeValue, data, country, loading}) => {
     const [search, setSearch] = useState(null)
     const [region, setRegion] = useState(null)
     
-    
   return (
     <>
-
-        {loading && <Spinner themeValue={themeValue}/>}
+      {loading && <Spinner themeValue={themeValue}/>}
     {
       !loading && <div className='mx-6 mt-2 py-5'>
       <div className="md:flex md:justify-between drop-shadow rounded">

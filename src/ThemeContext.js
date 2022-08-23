@@ -7,7 +7,6 @@ export const ThemeProvider = props =>{
 
   const toggleFunc = () => {
     setToggleState(!toggleState)
-
     localStorage.setItem("theme", JSON.stringify(toggleState))
   };
   const themeValue = JSON.parse(localStorage.getItem("theme"));
