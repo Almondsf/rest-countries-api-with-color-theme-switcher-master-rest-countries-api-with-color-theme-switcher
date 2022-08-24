@@ -37,7 +37,7 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/"><Home loading={loading} country={country} toggleState={toggleState} themeValue={themeValue}/></Route>
-            <Route path="/country/:callingCodes"><Detail country={country}/></Route>
+            <Route path="/country/:callingCodes"><Detail country={country} themeValue={themeValue}/></Route>
           </Switch>
         </div>
       </div>
