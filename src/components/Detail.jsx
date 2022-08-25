@@ -36,6 +36,7 @@ export const Detail = ({themeValue}) => {
               </div>
             </div>
           </div>
+          Not done yet
           </div>
         ))}</div>
       )}
