@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import { FaSistrix } from "react-icons/fa";
 import {CountryHome} from './CountryHome'
 import Spinner from "./Spinner"
