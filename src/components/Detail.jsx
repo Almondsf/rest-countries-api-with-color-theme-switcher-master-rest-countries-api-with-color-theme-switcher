@@ -13,11 +13,11 @@ export const Detail = ({themeValue}) => {
     {loading || <button className={themeValue ? 'my-10 ml-10 drop-shadow-lg bg-darkBlue rounded text-sm flex px-3 py-1 text-center' : 'text-center text-sm my-10 ml-10 flex drop-shadow-lg bg-lwhite py-1 px-3 rounded' } onClick={() => history.go(-1)}><span className='mt-1 mr-1'><BiArrowBack/></span>Back</button>}
       {country && (
         <div>{country.map((cstuff) =>(
-          <div className='flex ml-10'>
-          <img className='w-[450px] h-[350px] mr-16' src={cstuff.flag} alt={cstuff.name}/>
+          <div className='md:flex md:ml-10'>
+          <img className='w-[450px] h-[350px] md:mr-16' src={cstuff.flag} alt={cstuff.name}/>
           <div>
             <h1>{cstuff.name}</h1>
-            <div className='flex'>
+            <div className='md:flex'>
               <div>
                 <ul>
                 <li>Native Name: {cstuff.nativeName}</li>
@@ -27,7 +27,7 @@ export const Detail = ({themeValue}) => {
                 <li>Capital: {cstuff.capital}</li>
                 </ul>
               </div>
-              <div className='ml-16'>
+              <div className='md:ml-16'>
                 <ul>
                 <li>Top Level Domain:  {cstuff.topLevelDomain}</li>
                 <li>Currencies: {cstuff.currency}</li>
